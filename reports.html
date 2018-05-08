@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ReportsApp</title>
+    <link rel="stylesheet" href="./css/reports.css">
+</head>
+<body>
+    
+    <div id="inner-body">
+        <header>
+            <div class="container">
+                <div id="inner-header">
+                    <h2 class="header-title">Interviews Reports</h2>
+                    <div class="header-candidates">
+                        <a href="#">Candidates</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main id="reports-page">
+            <div class="container">
+                <section id="info-section">
+                    <div class="info-wrapper">
+                        <div class="info-holder">
+                            <img class="info-img" alt="profile-photo">
+                        </div>
+                        <div class="info-holder">
+                            <div class="name">
+                                <h5 class="info-h">Name:</h5>
+                                <h6 class="info-name info-text"></h6>
+                            </div>
+                            <div class="email">
+                                <h5 class="info-h">E-mail:</h5>
+                                <p class="info-email info-text"></p>
+                            </div>
+                        </div>
+                        <div class="info-holder">
+                            <div class="info-date-of-birth">
+                                <h5 class="info-h">Date Of Birth:</h5>
+                                <p class="date-of-birth info-text"></p>
+                            </div>
+                            <div class="info-education-holder">
+                                <h5 class="info-h">Education:</h5>
+                                <h6 class="info-education info-text"></h6>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="table-section">
+                    <h2 class="table-reports"></h2>
+                    <table>
+                        <tr>
+                            <th>Company</th>
+                            <th>Interview Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="./js/reports/uiReports.js"></script>
+    <script src="./js/reports/dataReports.js"></script>
+    <script src="./js/reports/controlReports.js"></script>
+</body>
+</html>

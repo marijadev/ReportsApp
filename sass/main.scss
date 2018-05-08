@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgba(249,241,233,1);
+
+    #inner-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        
+        .header-candidates a {
+            text-decoration: none;
+            color: black;
+            border: 1px solid rgba(0,0,0,0.5);
+            padding: 5px 15px;
+        }
+    }
+}
+
+.inner-search-section {
+    display: flex;
+    justify-content: space-between;
+    
+    #search {
+        max-height: 30px;
+        align-self: center;
+    }
+}
+
+.cards-holder {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.card-wrapper {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 23%;
+    height: auto;
+    text-align: center;
+    border: 1px solid #222;
+    padding: 20px;
+    margin: 10px 1% 20px 1%;
+    cursor: pointer;
+}
+
+.card-img{
+    display: block;
+    width: 80%;
+    height: 70%;
+    margin: 0 auto;
+    border-radius: 50%;
+}
