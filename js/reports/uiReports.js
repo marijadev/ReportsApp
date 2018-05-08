@@ -7,11 +7,11 @@ var uiReports = (function () {
         var education = document.querySelector(".info-education");
         var dateOfBirth = document.querySelector(".date-of-birth");
 
-        img.src = candidate[0].avatar;
-        name.textContent = candidate[0].name;
-        email.textContent = candidate[0].email;
-        education.textContent = candidate[0].education;
-        dateOfBirth.textContent = getDate(candidate[0].birthday);
+        img.src = candidate.avatar;
+        name.textContent = candidate.name;
+        email.textContent = candidate.email;
+        education.textContent = candidate.education;
+        dateOfBirth.textContent = getDate(candidate.birthday);
     }
 
     function getDate(dateOfBirth) {

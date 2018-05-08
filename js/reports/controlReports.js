@@ -4,19 +4,19 @@ var controlReports = (function(data, ui) {
         var request = new XMLHttpRequest();
         var candidateID = localStorage.getItem("id");
         
-        request.open("GET", "http://localhost:3333/api/candidates?q=" + candidateID);
+        request.open("GET", "http://localhost:3333/api/candidates/" + candidateID + "?_embed=reports");
         request.onload = function (response) {
             if (request.status >= 200 && request.status < 400) {
                 var candidateResponse = JSON.parse(request.response);
-                var singleCandidate = candidateResponse;
+                var response = candidateResponse;
 
-                ui.displaySingleCandidate(singleCandidate);
+                ui.displaySingleCandidate(response);
             }
         };
         
         request.send();
     }
-    
+
 
     function callFunctions() {
         getCandidate()
